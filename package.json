@@ -1,0 +1,33 @@
+{
+  "name": "rxjs-state-subject",
+  "version": "1.0.0",
+  "description": "A RxJS Subject extended from BehaviorSubject to use in (Angular) simple state management",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": ["/dist"],
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/touhidrahman/rxjs-state-subject.git"
+  },
+  "keywords": [
+    "rxjs",
+    "angular"
+  ],
+  "author": "Touhid Rahman <touhidrahman1987@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/touhidrahman/rxjs-state-subject/issues"
+  },
+  "homepage": "https://github.com/touhidrahman/rxjs-state-subject#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "rxjs": "^6.6.7"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "removeComments": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationDir": "./dist",
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "lib": ["es2015", "dom"]
+  },
+  "compileOnSave": false,
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*.ts"]
+}
