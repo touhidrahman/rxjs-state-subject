@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2018",
     "module": "commonjs",
     "sourceMap": true,
     "removeComments": true,
@@ -14,7 +14,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "skipLibCheck": true,
-    "lib": ["es2015", "dom"]
+    "lib": ["es2018", "dom"]
   },
   "compileOnSave": false,
   "exclude": ["node_modules"],
