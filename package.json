@@ -1,6 +1,6 @@
 {
   "name": "rxjs-state-subject",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A RxJS Subject extended from BehaviorSubject to use in (Angular) simple state management",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -30,6 +30,7 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
+    "lodash-es": "^4.17.21",
     "rxjs": "^6.6.7"
   }
 }

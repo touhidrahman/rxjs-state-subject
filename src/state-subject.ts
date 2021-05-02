@@ -1,3 +1,4 @@
+import { isEqual } from 'lodash-es';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { distinctUntilChanged } from 'rxjs/operators';
 
@@ -10,7 +11,7 @@ export class StateSubject<T> extends BehaviorSubject<T> {
     }
 
     get value$(): Observable<T> {
-        return super.asObservable().pipe(distinctUntilChanged())
+        return super.asObservable().pipe(distinctUntilChanged((a, b) => isEqual(a, b)))
     }
 
     update(value: T): void {
