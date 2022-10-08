@@ -1,4 +1,5 @@
-import { filter, map, Observable, Subject, takeUntil } from "rxjs"
+import { isEqual } from "lodash-es"
+import { distinctUntilChanged, filter, map, Observable, share, Subject, takeUntil } from "rxjs"
 import { StateSubject } from "./state-subject"
 
 export class Store<T extends Object> {
@@ -19,12 +20,17 @@ export class Store<T extends Object> {
         return this.state.value$.pipe(
             map((state) => state[key]),
             filter(filterFn ?? (() => true)),
+            distinctUntilChanged((a, b) => isEqual(a, b)),
+            share(),
             takeUntil(this.unsubscriber),
         )
     }
 
     selectAll(): Observable<T> {
-        return this.state.value$
+        return this.state.value$.pipe(
+            share(),
+            takeUntil(this.unsubscriber),
+        )
     }
 
     reset(sideEffectFn?: () => void): void {
