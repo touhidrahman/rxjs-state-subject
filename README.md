@@ -3,7 +3,7 @@
 ### Installation
 
 ```
-npm inistall rxjs-state-subject
+npm install rxjs-state-subject
 ```
 
 ### Usage of StateSubject
