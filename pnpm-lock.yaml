@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      radash:
-        specifier: ^12.1.1
-        version: 12.1.1
+      es-toolkit:
+        specifier: ^1.45.1
+        version: 1.45.1
       rxjs:
         specifier: ^7.8.2
         version: 7.8.2
@@ -21,9 +21,8 @@ importers:
 
 packages:
 
-  radash@12.1.1:
-    resolution: {integrity: sha512-h36JMxKRqrAxVD8201FrCpyeNuUY9Y5zZwujr20fFO77tpUtGa6EZzfKw/3WaiBX95fq7+MpsuMLNdSnORAwSA==}
-    engines: {node: '>=14.18.0'}
+  es-toolkit@1.45.1:
+    resolution: {integrity: sha512-/jhoOj/Fx+A+IIyDNOvO3TItGmlMKhtX8ISAHKE90c4b/k1tqaqEZ+uUqfpU8DMnW5cgNJv606zS55jGvza0Xw==}
 
   rxjs@7.8.2:
     resolution: {integrity: sha512-dhKf903U/PQZY6boNNtAGdWbG85WAbjT/1xYoZIC7FAY0yWapOBQVsVrDl58W86//e1VpMNBtRV4MaXfdMySFA==}
@@ -38,7 +37,7 @@ packages:
 
 snapshots:
 
-  radash@12.1.1: {}
+  es-toolkit@1.45.1: {}
 
   rxjs@7.8.2:
     dependencies:

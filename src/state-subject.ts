@@ -1,4 +1,4 @@
-import { isEqual } from 'radash';
+import { isEqual } from 'es-toolkit';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { distinctUntilChanged } from 'rxjs/operators';
 
