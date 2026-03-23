@@ -8,7 +8,7 @@
     "/dist"
   ],
   "scripts": {
-    "prepublish": "rm -rf dist && npm run build",
+    "clean": "rm -rf dist",
     "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json"
   },
   "repository": {
@@ -21,15 +21,19 @@
   ],
   "author": "Touhid Rahman <hello@touhidrahman.me>",
   "license": "MIT",
+  "publishConfig": { "access": "public" },
   "bugs": {
     "url": "https://github.com/touhidrahman/rxjs-state-subject/issues"
   },
   "homepage": "https://github.com/touhidrahman/rxjs-state-subject#readme",
+  "dependencies": {
+    "es-toolkit": "^1.45.1"
+  },
   "devDependencies": {
+    "rxjs": "^7.8.2",
     "typescript": "^5.9.3"
   },
-  "dependencies": {
-    "es-toolkit": "^1.45.1",
-    "rxjs": "^7.8.2"
+  "peerDependencies": {
+      "rxjs": "^7.0.0"
   }
 }
