@@ -1,6 +1,6 @@
 {
   "name": "rxjs-state-subject",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "A RxJS Subject extended from BehaviorSubject",
   "type": "module",
   "exports": {
