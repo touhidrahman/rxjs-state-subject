@@ -1,7 +1,7 @@
 {
   "name": "rxjs-state-subject",
   "version": "4.0.0",
-  "description": "A RxJS Subject extended from BehaviorSubject, and a Store class to use in (Angular) simple state management",
+  "description": "A RxJS Subject extended from BehaviorSubject",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "files": [
@@ -20,17 +20,17 @@
     "rxjs",
     "angular"
   ],
-  "author": "Touhid Rahman <mail@touhidrahman.me>",
+  "author": "Touhid Rahman <hello@touhidrahman.me>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/touhidrahman/rxjs-state-subject/issues"
   },
   "homepage": "https://github.com/touhidrahman/rxjs-state-subject#readme",
   "devDependencies": {
-    "typescript": "^5.2.2"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
-    "radash": "^11.0.0",
-    "rxjs": "^7.8.1"
+    "radash": "^12.1.1",
+    "rxjs": "^7.8.2"
   }
 }
